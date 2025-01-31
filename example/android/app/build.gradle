@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    namespace "io.carius.lars.ar_flutter_plugin_example"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -50,6 +51,10 @@ android {
         release {
             signingConfig signingConfigs.debug
         }
+    }
+
+     buildFeatures {
+        buildConfig true
     }
 }
 
