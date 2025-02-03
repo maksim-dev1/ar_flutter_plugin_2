@@ -28,6 +28,10 @@ android {
     namespace "io.carius.lars.ar_flutter_plugin"
     compileSdkVersion 30
 
+    buildFeatures {
+        buildConfig true
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -35,9 +39,6 @@ android {
         minSdkVersion 24
     }
 
-     buildFeatures {
-        buildConfig true
-    }
 }
 
 dependencies {

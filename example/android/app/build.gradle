@@ -30,6 +30,10 @@ android {
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
+    buildFeatures {
+        buildConfig true
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -51,10 +55,6 @@ android {
         release {
             signingConfig signingConfigs.debug
         }
-    }
-
-     buildFeatures {
-        buildConfig true
     }
 }
 
